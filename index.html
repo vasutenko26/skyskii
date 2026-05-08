@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автослужба — Технічне обслуговування</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="main-header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="#FF6B00" stroke-width="2"/>
+          <circle cx="20" cy="20" r="6" fill="#FF6B00"/>
+          <line x1="20" y1="2" x2="20" y2="10" stroke="#FF6B00" stroke-width="2"/>
+          <line x1="20" y1="30" x2="20" y2="38" stroke="#FF6B00" stroke-width="2"/>
+          <line x1="2" y1="20" x2="10" y2="20" stroke="#FF6B00" stroke-width="2"/>
+          <line x1="30" y1="20" x2="38" y2="20" stroke="#FF6B00" stroke-width="2"/>
+          <line x1="6.7" y1="6.7" x2="12.5" y2="12.5" stroke="#FF6B00" stroke-width="2"/>
+          <line x1="27.5" y1="27.5" x2="33.3" y2="33.3" stroke="#FF6B00" stroke-width="2"/>
+          <line x1="33.3" y1="6.7" x2="27.5" y2="12.5" stroke="#FF6B00" stroke-width="2"/>
+          <line x1="12.5" y1="27.5" x2="6.7" y2="33.3" stroke="#FF6B00" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-main">АВТО<span>СЛУЖБА</span></span>
+        <span class="logo-sub">Технічне обслуговування</span>
+      </div>
+    </div>
+
+    <nav id="nav-menu">
+      <a href="#about">Про нас</a>
+      <a href="#services">Послуги</a>
+      <a href="#team">Команда</a>
+      <a href="#events">Акції</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+
+    <div class="header-right">
+      <div class="author-badge">Автор: Скирський М.П.</div>
+      <a href="#contacts" class="header-cta">Записатись</a>
+    </div>
+
+    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Mobile author strip -->
+  <div class="mobile-author-strip">Автор: Скирський М.П.</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-noise"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="dot"></span>
+      Офіційна Автослужба · Київ
+    </div>
+    <h1>
+      <span class="line1">НАДІЙНЕ</span>
+      <span class="line2">ТЕХНІЧНЕ</span>
+      <span class="line3">ОБСЛУГО<span class="accent">ВУВАННЯ</span></span>
+    </h1>
+    <p class="hero-sub">
+      Повний комплекс послуг з технічного обслуговування та ремонту автомобілів.
+      Досвідчені механіки, сучасне обладнання, гарантія якості.
+    </p>
+    <div class="hero-actions">
+      <a href="#services" class="btn-primary">
+        <span>Наші послуги</span>
+        <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+      <a href="#contacts" class="btn-ghost">Записатись на сервіс</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><strong>2 000+</strong><span>Авто обслуговано</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>15 р.</strong><span>Досвіду роботи</span></div>
+      <div class="hstat-divider"></div>
+      <div class="hstat"><strong>98%</strong><span>Задоволених клієнтів</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="gear gear-big">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M100 20 L115 10 L125 30 L145 25 L148 47 L168 52 L163 72 L180 82 L170 100 L180 118 L163 128 L168 148 L148 153 L145 175 L125 170 L115 190 L100 180 L85 190 L75 170 L55 175 L52 153 L32 148 L37 128 L20 118 L30 100 L20 82 L37 72 L32 52 L52 47 L55 25 L75 30 L85 10 Z" stroke="#FF6B00" stroke-width="2" fill="rgba(255,107,0,0.05)"/>
+        <circle cx="100" cy="100" r="35" stroke="#FF6B00" stroke-width="2" fill="rgba(255,107,0,0.08)"/>
+        <circle cx="100" cy="100" r="12" fill="#FF6B00" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="gear gear-small">
+      <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M60 12 L70 6 L77 18 L90 15 L92 29 L105 33 L101 46 L112 54 L106 66 L112 78 L101 86 L105 99 L92 103 L90 117 L77 114 L70 126 L60 120 L50 126 L43 114 L30 117 L28 103 L15 99 L19 86 L8 78 L14 66 L8 54 L19 46 L15 33 L28 29 L30 15 L43 18 L50 6 Z" stroke="rgba(255,107,0,0.4)" stroke-width="1.5" fill="rgba(255,107,0,0.03)"/>
+        <circle cx="60" cy="60" r="20" stroke="rgba(255,107,0,0.4)" stroke-width="1.5" fill="none"/>
+      </svg>
+    </div>
+    <div class="hero-plate">
+      <div class="plate-label">ТО / РЕМОНТ</div>
+      <div class="plate-number">АА 7777 КК</div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Гортайте вниз</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-visual">
+    <div class="about-img-wrap">
+      <img src="images/garage.jpg" alt="Автосервіс" loading="lazy">
+      <div class="about-label-badge">
+        <div class="badge-icon">🔧</div>
+        <div>
+          <strong>15</strong>
+          <span>Років досвіду</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-side-stats">
+      <div class="side-stat">
+        <div class="ss-num">47</div>
+        <div class="ss-txt">Майстрів у штаті</div>
+      </div>
+      <div class="side-stat">
+        <div class="ss-num">8</div>
+        <div class="ss-txt">Підйомників</div>
+      </div>
+      <div class="side-stat">
+        <div class="ss-num">24/7</div>
+        <div class="ss-txt">Чергування</div>
+      </div>
+    </div>
+  </div>
+  <div class="about-content">
+    <div class="section-tag">Про нашу службу</div>
+    <h2 class="section-title">Автослужба<br><span>підрозділу</span></h2>
+    <div class="orange-line"></div>
+    <p class="section-desc">
+      Автослужба забезпечує технічне обслуговування, поточний та капітальний ремонт автомобільної техніки підрозділу. Ми підтримуємо готовність автопарку до виконання завдань у будь-яких умовах.
+    </p>
+    <p class="section-desc">
+      Наші фахівці мають багаторічний досвід роботи з усіма видами автомобільної техніки та використовують сучасне діагностичне обладнання для точного визначення несправностей.
+    </p>
+    <div class="about-features">
+      <div class="feature-item">
+        <div class="fi-icon">⚙️</div>
+        <div class="fi-text">
+          <strong>Сучасне обладнання</strong>
+          <span>Діагностика та ремонт усіх систем</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">🛡️</div>
+        <div class="fi-text">
+          <strong>Гарантія якості</strong>
+          <span>На всі виконані роботи</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">⏱️</div>
+        <div class="fi-text">
+          <strong>Оперативність</strong>
+          <span>Мінімальний час простою техніки</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="fi-icon">📋</div>
+        <div class="fi-text">
+          <strong>Документація</strong>
+          <span>Повний облік робіт та запчастин</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="section-header centered">
+    <div class="section-tag">Напрями роботи</div>
+    <h2 class="section-title">Наші <span>послуги</span></h2>
+    <div class="orange-line centered"></div>
+    <p class="section-desc">Комплексне обслуговування автомобільної техніки будь-якої складності</p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="sc-number">01</div>
+      <div class="sc-icon">🔩</div>
+      <h3>Технічне обслуговування</h3>
+      <p>Планове ТО відповідно до регламенту виробника. Заміна масел, фільтрів, технічних рідин та витратних матеріалів.</p>
+      <div class="sc-tag">ТО-1 · ТО-2 · ТО-3</div>
+    </div>
+
+    <div class="service-card featured">
+      <div class="sc-number">02</div>
+      <div class="sc-icon">🚗</div>
+      <h3>Двигун та трансмісія</h3>
+      <p>Діагностика, ремонт та відновлення двигунів і трансмісій усіх типів. Робота з дизельними та бензиновими агрегатами.</p>
+      <div class="sc-tag">Двигун · КПП · Зчеплення</div>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-number">03</div>
+      <div class="sc-icon">🔧</div>
+      <h3>Ходова частина</h3>
+      <p>Діагностика та ремонт підвіски, рульового управління, гальмівних систем. Регулювання кутів встановлення коліс.</p>
+      <div class="sc-tag">Підвіска · Гальма · Рульове</div>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-number">04</div>
+      <div class="sc-icon">⚡</div>
+      <h3>Електрообладнання</h3>
+      <p>Комп'ютерна діагностика, ремонт електросистем, генераторів, стартерів, електропроводки та освітлення.</p>
+      <div class="sc-tag">Діагностика · Проводка · АКБ</div>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-number">05</div>
+      <div class="sc-icon">🛞</div>
+      <h3>Шиномонтаж</h3>
+      <p>Монтаж, демонтаж та балансування коліс усіх розмірів. Ремонт пошкоджених шин. Сезонне зберігання.</p>
+      <div class="sc-tag">Монтаж · Балансування · Зберігання</div>
+    </div>
+
+    <div class="service-card">
+      <div class="sc-number">06</div>
+      <div class="sc-icon">🔍</div>
+      <h3>Кузовні роботи</h3>
+      <p>Рихтування, зварювання, антикорозійна обробка кузова. Відновлення геометрії та лакофарбове покриття.</p>
+      <div class="sc-tag">Рихтування · Зварка · Фарбування</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="team-section">
+  <div class="section-header">
+    <div class="section-tag">Наші фахівці</div>
+    <h2 class="section-title">Команда <span>служби</span></h2>
+    <div class="orange-line"></div>
+    <p class="section-desc">Кваліфіковані механіки та технічні спеціалісти з багаторічним досвідом</p>
+  </div>
+  <div class="team-grid">
+
+    <div class="team-card">
+      <div class="tc-photo">
+        <img src="images/mechanic-1.jpg" alt="Начальник автослужби" loading="lazy">
+        <div class="tc-rank">01</div>
+      </div>
+      <div class="tc-body">
+        <h4>Іваненко Олексій Сергійович</h4>
+        <div class="tc-role">Начальник автослужби</div>
+        <div class="tc-spec">Організація та управління</div>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="tc-photo">
+        <img src="images/mechanic-2.jpg" alt="Старший механік" loading="lazy">
+        <div class="tc-rank">02</div>
+      </div>
+      <div class="tc-body">
+        <h4>Коваль Василь Петрович</h4>
+        <div class="tc-role">Старший механік</div>
+        <div class="tc-spec">Двигуни та трансмісії</div>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="tc-photo">
+        <img src="images/mechanic-3.jpg" alt="Автоелектрик" loading="lazy">
+        <div class="tc-rank">03</div>
+      </div>
+      <div class="tc-body">
+        <h4>Мороз Андрій Юрійович</h4>
+        <div class="tc-role">Автоелектрик</div>
+        <div class="tc-spec">Електросистеми та діагностика</div>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="tc-photo">
+        <img src="images/mechanic-4.jpg" alt="Майстер кузовного цеху" loading="lazy">
+        <div class="tc-rank">04</div>
+      </div>
+      <div class="tc-body">
+        <h4>Гриценко Микола Іванович</h4>
+        <div class="tc-role">Майстер кузовного цеху</div>
+        <div class="tc-spec">Кузовні роботи та фарбування</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EVENTS / PROMOTIONS -->
+<section id="events" class="events-section">
+  <div class="section-header">
+    <div class="section-tag">Актуальні пропозиції</div>
+    <h2 class="section-title">Акції та <span>заходи</span></h2>
+    <div class="orange-line"></div>
+  </div>
+  <div class="events-grid">
+
+    <div class="event-card">
+      <div class="ec-date">
+        <span class="ec-day">15</span>
+        <span class="ec-month">ТРАВ</span>
+      </div>
+      <div class="ec-body">
+        <div class="ec-badge">Навчання</div>
+        <h3>Інструктаж з техніки безпеки</h3>
+        <p>Обов'язковий інструктаж для всього технічного персоналу автослужби перед початком нового сезону.</p>
+        <div class="ec-meta">
+          <span>📍 Навчальний клас №2</span>
+          <span>⏰ 09:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card highlight">
+      <div class="ec-date">
+        <span class="ec-day">22</span>
+        <span class="ec-month">ТРАВ</span>
+      </div>
+      <div class="ec-body">
+        <div class="ec-badge accent">Акція</div>
+        <h3>Безкоштовна діагностика</h3>
+        <p>Комплексна комп'ютерна діагностика всіх систем автомобіля — безкоштовно для техніки підрозділу.</p>
+        <div class="ec-meta">
+          <span>📍 Бокс №3</span>
+          <span>⏰ 10:00 – 16:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="ec-date">
+        <span class="ec-day">01</span>
+        <span class="ec-month">ЧЕР</span>
+      </div>
+      <div class="ec-body">
+        <div class="ec-badge">Огляд</div>
+        <h3>Технічний огляд автопарку</h3>
+        <p>Планова перевірка технічного стану всіх одиниць автомобільної техніки. Складання відомостей несправностей.</p>
+        <div class="ec-meta">
+          <span>📍 Автопарк</span>
+          <span>⏰ Весь день</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <div class="ec-date">
+        <span class="ec-day">10</span>
+        <span class="ec-month">ЧЕР</span>
+      </div>
+      <div class="ec-body">
+        <div class="ec-badge">Семінар</div>
+        <h3>Семінар "Нові технології ремонту"</h3>
+        <p>Ознайомлення механіків з сучасними методами діагностики та ремонту автомобільних систем.</p>
+        <div class="ec-meta">
+          <span>📍 Конференц-зал</span>
+          <span>⏰ 14:00</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts" class="contacts-section">
+  <div class="contacts-inner">
+    <div class="contacts-info">
+      <div class="section-tag">Зв'язок з нами</div>
+      <h2 class="section-title">Контактна<br><span>інформація</span></h2>
+      <div class="orange-line"></div>
+      <p class="section-desc">Звертайтесь до нас у робочий час. Аварійні виклики — цілодобово.</p>
+
+      <div class="contact-list">
+        <div class="contact-row">
+          <div class="cr-icon">📍</div>
+          <div class="cr-info">
+            <strong>Адреса</strong>
+            <p>вул. Механічна, 14, корп. 1<br>м. Київ, 03150</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="cr-icon">📞</div>
+          <div class="cr-info">
+            <strong>Телефон</strong>
+            <p>+38 (044) 321-00-11<br>+38 (067) 555-44-33</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="cr-icon">✉️</div>
+          <div class="cr-info">
+            <strong>Електронна пошта</strong>
+            <p>auto@service.ua<br>repair@service.ua</p>
+          </div>
+        </div>
+        <div class="contact-row">
+          <div class="cr-icon">🕐</div>
+          <div class="cr-info">
+            <strong>Робочий час</strong>
+            <p>Пн–Пт: 08:00 – 18:00<br>Сб: 09:00 – 14:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <div class="form-header">
+        <h3>Залишити заявку</h3>
+        <p>Опишіть проблему та ми зв'яжемось із вами</p>
+      </div>
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Ваше ім'я</label>
+            <input type="text" placeholder="Іванenko Олексій" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Номер телефону">
+            <label>Телефон</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Марка та модель авто</label>
+          <input type="text" placeholder="Наприклад: Toyota Camry 2020">
+        </div>
+        <div class="form-group">
+          <label>Опис несправності</label>
+          <textarea placeholder="Опишіть симптоми або вид необхідних робіт..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full">
+          <span>Надіслати заявку</span>
+          <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M12 6l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="foot-logo">АВТО<span>СЛУЖБА</span></div>
+      <p>Технічне обслуговування та ремонт автомобільної техніки</p>
+    </div>
+    <div class="footer-copy">
+      <p>© 2026 Автослужба. Всі права захищено.</p>
+      <p class="author-line">Автор сайту: <strong>Скирський М.П.</strong></p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#about">Про нас</a>
+      <a href="#services">Послуги</a>
+      <a href="#team">Команда</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
